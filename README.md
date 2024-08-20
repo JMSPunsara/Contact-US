@@ -38,7 +38,7 @@ CREATE TABLE contacts (
 
 ---
 
-## HTML
+## <img src="https://img2.gratispng.com/20180802/tpl/kisspng-logo-html5-brand-clip-art-%E6%9D%89-%E5%B1%B1-%E8%89%AF-%E9%9B%84-5b62be01b565d5.334247781533197825743.jpg" alt="Logo" width="50" height="60">
 
 **contactform.html**
 
@@ -82,7 +82,7 @@ CREATE TABLE contacts (
 
 ---
 
-## CSS
+## <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="Logo" width="50" height="60">
 
 **styles.css**
 ```/* Importing fonts and effects */
@@ -259,7 +259,7 @@ button:active {
 
 ---
 
-## JS
+## <img src="https://th.bing.com/th/id/OIP.YsuaCftVk7UEvYkW1deYUAHaKY?cb=13&w=1371&h=1922&rs=1&pid=ImgDetMain" alt="Logo" width="50" height="60">
 
 **scripts.js**
 ```function validateForm() {
@@ -284,7 +284,8 @@ button:active {
 
 ---
 
-## PHP
+## <img src="https://th.bing.com/th/id/R.adbac78231c9a2ff5c21aaa32dd4e1e4?rik=jWTUkOKwKIk7jg&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f05%2fphp_emblem.png&ehk=gbX0plW%2fbqAeSR4cWmkL44R%2bUWxCpG3CL%2b2V4KHQlpQ%3d&risl=&pid=ImgRaw&r=0" alt="Logo" width="80" height="35">
+
 
 **process.php**
 ```<?php
