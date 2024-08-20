@@ -7,7 +7,7 @@ This project implements a dynamic contact form using **HTML**, **CSS**, **JavaSc
 - **Frontend (HTML/CSS)**: A contact form that collects user information (name, email, inquiry, contact number) with `submit` and `reset` buttons.
 - **Backend (PHP)**: Processes form data and stores it in a MySQL database.
 - **AJAX (JavaScript)**: Handles form submission without reloading the page and displays success/error messages.
-
+**[Watch the demo video](https://youtu.be/2tZHjpH9Jh8?si=8ZKWM_keaoKDAJww)**
 <img src="https://lh3.googleusercontent.com/pw/AP1GczMKOZmvSRATA8eMdjHGoB1xndyRwuKAfyT3dI_BfnyjwTop72Z0K1bRcHev_YUZs8KRlGarhSLZA4NyT2NZRnxUbmcGm4uD3nAnL2K9kX_r0IpOgEAzfrfB4AbdoM3SLajX4VSMDTpnxAf1Hri7ykgu=w1815-h869-s-no-gm?authuser=0" alt="Logo" width="1900" height="500">
 
 ## File Structure
