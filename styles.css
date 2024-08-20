@@ -1,0 +1,170 @@
+/* Importing fonts and effects */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: bgShift 10s infinite ease-in-out;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 1200px;
+    color: #fff;
+}
+
+/* Background Shift Animation */
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 3D Container with Neon Glow */
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 450px;
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.7), inset 0 0 30px rgba(0, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transform-style: preserve-3d;
+    transform: rotateY(25deg) rotateX(10deg);
+    transition: transform 0.8s ease;
+}
+
+.container:hover {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+/* Parallax Shapes */
+.container::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.6), transparent);
+    border-radius: 50%;
+    top: -250px;
+    left: -300px;
+    z-index: -1;
+    animation: parallax 15s linear infinite;
+}
+
+@keyframes parallax {
+    from { transform: translate(0, 0) rotate(0deg); }
+    to { transform: translate(-50px, 50px) rotate(360deg); }
+}
+
+/* Glowing Title */
+h2 {
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    letter-spacing: 4px;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.4); }
+    100% { text-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 0.8); }
+}
+
+/* Inputs with Ripple Effects */
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+}
+
+input:hover, textarea:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ripple Effect */
+input:focus::after, textarea:focus::after {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -150%;
+    left: -150%;
+    background: rgba(0, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: rippleEffect 1s ease-out;
+    pointer-events: none;
+}
+
+@keyframes rippleEffect {
+    from { transform: scale(0); opacity: 1; }
+    to { transform: scale(1); opacity: 0; }
+}
+
+/* Neon Buttons */
+button {
+    width: 48%;
+    padding: 15px;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1);
+    transform: translateY(-5px);
+}
+
+button:active {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+    transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
