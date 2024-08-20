@@ -19,6 +19,25 @@ This project implements a dynamic contact form using **HTML**, **CSS**, **JavaSc
 - ├── **styles.css** # CSS file to style the form (not included in this guide).
 - └── **README.md** # Documentation.
 
+## SQL Query: (Create the Database and Table)
+
+```CREATE DATABASE contact_form;
+
+USE contact_form;
+
+CREATE TABLE contacts (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    inquiry TEXT NOT NULL,
+    contact VARCHAR(15) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+```
+
+---
+
 ## HTML
 
 **contactform.html**
